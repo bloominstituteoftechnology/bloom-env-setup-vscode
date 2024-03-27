@@ -11,7 +11,7 @@ function activate(context) {
       prompt: "Enter your email, please."
     })
 
-    if (rawEmail === null) {
+    if (!rawEmail || !rawEmail.trim()) {
       vscode.window.showInformationMessage('No email was entered.')
       return
     }
