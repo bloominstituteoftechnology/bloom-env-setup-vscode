@@ -1,6 +1,7 @@
 {
   "name": "bloom-env-setup",
-  "displayName": "Bloom Env Setup",
+  "displayName": "Bloomtech Env Setup",
+  "publisher": "BloomtechInstituteofTechnology",
   "description": "This extension allows Bloomtech students to obtain an environment setup confirmation code",
   "version": "0.0.1",
   "author": "Gabriel Cabrejas <gabriel@cabrejas.net>",
