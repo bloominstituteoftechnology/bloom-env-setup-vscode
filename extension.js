@@ -16,7 +16,7 @@ function activate(context) {
       return
     }
 
-    const email = rawEmail.trim()
+    const email = rawEmail.trim().toLowerCase()
     const isEmailValid = validator.isEmail(email)
 
     if (email && isEmailValid) {
