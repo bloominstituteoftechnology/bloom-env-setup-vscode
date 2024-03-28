@@ -1,8 +1,9 @@
 {
   "name": "bloom-env-setup",
   "displayName": "Bloom Env Setup",
-  "description": "",
+  "description": "This extension allows to obtain an environment setup confirmation code",
   "version": "0.0.1",
+  "author": "Gabriel Cabrejas <gabriel@cabrejas.net>",
   "engines": {
     "vscode": "^1.87.0"
   },

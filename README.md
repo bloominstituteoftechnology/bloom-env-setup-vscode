@@ -1,65 +1,36 @@
-# bloom-env-setup README
+# Bloomtech VSCode Setup Confirmation
 
-This is the README for your extension "bloom-env-setup". After writing up a brief description, we recommend including the following sections.
+## Overview
+The Bloomtech VSCode Setup Confirmation extension is designed for students enrolled in the Web Track at Bloomtech Institute of Technology. This extension facilitates the process of confirming that Visual Studio Code (VSCode) has been successfully installed on the student's computer. By generating a unique code based on the student's email address, it allows for an easy verification process on the Bloomtech platform.
 
 ## Features
+- **Email-based Code Generation**: Generates a unique code using the student's email address.
+- **Clipboard Integration**: Offers a "Copy to Clipboard" functionality for easy code sharing.
+- **Easy Verification Process**: Simplifies the process of verifying VSCode installation for course requirements.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Installation
+This extension can be installed directly from the Visual Studio Code Marketplace.
 
-For example if there is an image subfolder under your extension project workspace:
+1. Open VSCode.
+2. Navigate to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X`.
+3. Search for `Bloomtech VSCode Setup Confirmation`.
+4. Click on the `Install` button.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage
+To use the extension and generate your unique setup confirmation code, follow these steps:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open the Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
+2. Type `Bloomtech setup confirmation code` and select the command.
+3. When prompted, enter your email address and press Enter.
+4. A unique code will be generated and displayed in a toast notification with an option to copy it to your clipboard.
+5. Click on the `Copy code to clipboard` button to copy your code.
+6. Paste this code into the designated area on the Bloomtech platform to confirm your VSCode installation.
 
-## Requirements
+## Support
+If you encounter any issues or have questions regarding the extension, please contact the Bloomtech support team at [support@bloomtech.com](mailto:academicsupport@bloomtech.com).
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Contributing
+We welcome contributions and suggestions to improve this extension. Please feel free to submit issues or pull requests on our [GitHub repository](https://github.com/bloominstituteoftechnology/bloom-env-setup-vscode).
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## License
+This extension is provided under the [MIT License](./LICENSE).
