@@ -1,41 +1,58 @@
-# Welcome to your VS Code Extension
+# Bloomtech Environment Setup Extension Quickstart
 
-## What's in the folder
+## Overview
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your extension and command.
-  * The sample plugin registers a command and defines its title and command name. With this information VS Code can show the command in the command palette. It doesn’t yet need to load the plugin.
-* `extension.js` - this is the main file where you will provide the implementation of your command.
-  * The file exports one function, `activate`, which is called the very first time your extension is activated (in this case by executing the command). Inside the `activate` function we call `registerCommand`.
-  * We pass the function containing the implementation of the command as the second parameter to `registerCommand`.
+This quickstart guide is for developers looking to understand or contribute to the Bloomtech Environment Setup Extension. The extension prompts users to enter their email, validates it, and then generates a hash code which can be copied to the clipboard.
 
-## Get up and running straight away
+## Prerequisites
 
-* Press `F5` to open a new window with your extension loaded.
-* Run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Hello World`.
-* Set breakpoints in your code inside `extension.js` to debug your extension.
-* Find output from your extension in the debug console.
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Visual Studio Code](https://code.visualstudio.com/) (latest stable version)
 
-## Make changes
+## Getting Started
 
-* You can relaunch the extension from the debug toolbar after changing code in `extension.js`.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+1. Clone the repository to your local machine.
+2. Navigate into the cloned directory.
+3. Run `npm install` to install the dependencies.
 
-## Explore the API
+## Running the Extension
 
-* You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
+1. Open the project in Visual Studio Code.
+2. Press `F5` to open a new window with your extension loaded.
+3. Invoke your command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`), by typing `Bloomtech Setup Confirmation Code`.
+4. Enter an email address when prompted to see the generated hash code.
 
-## Run tests
+## Testing the Extension
 
-* Install the [Extension Test Runner](https://marketplace.visualstudio.com/items?itemName=ms-vscode.extension-test-runner)
-* Open the Testing view from the activity bar and click the Run Test" button, or use the hotkey `Ctrl/Cmd + ; A`
-* See the output of the test result in the Test Results view.
-* Make changes to `test/extension.test.js` or create new test files inside the `test` folder.
-  * The provided test runner will only consider files matching the name pattern `**.test.js`.
-  * You can create folders inside the `test` folder to structure your tests any way you want.
+Ensure the following functionalities work as expected:
+- Email input prompt opens.
+- Email validation checks for correctly formatted email addresses.
+- Hash code generation is correct and consistent for the same email.
+- `Copy code to clipboard` button copies the hash to the clipboard.
 
-## Go further
+## Debugging
 
- * [Follow UX guidelines](https://code.visualstudio.com/api/ux-guidelines/overview) to create extensions that seamlessly integrate with VS Code's native interface and patterns.
- * [Publish your extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VS Code extension marketplace.
- * Automate builds by setting up [Continuous Integration](https://code.visualstudio.com/api/working-with-extensions/continuous-integration).
+You can debug your extension in VS Code by setting breakpoints and pressing `F5` to launch the Extension Development Host. Output and debug information will appear in the Debug Console.
+
+## Contributing
+
+Please read our contributing guidelines for information on how to report issues or submit pull requests.
+
+## Publishing Changes
+
+When you're ready to publish changes, update the version number in `package.json` according to semantic versioning, and follow the instructions on [publishing a Visual Studio Code extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
+
+## Additional Resources
+
+- [Visual Studio Code API](https://code.visualstudio.com/api/references/vscode-api)
+- [validator.js](https://github.com/validatorjs/validator.js) for email validation logic.
+- [md5.js](https://github.com/pvorb/node-md5) for hash generation logic.
+
+## Support
+
+If you encounter any issues or require assistance, please contact the support team at [support@bloomtech.com](mailto:academicsupport@bloomtech.com).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details.
