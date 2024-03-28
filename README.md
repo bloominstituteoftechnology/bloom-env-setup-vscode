@@ -33,4 +33,4 @@ If you encounter any issues or have questions regarding the extension, please co
 We welcome contributions and suggestions to improve this extension. Please feel free to submit issues or pull requests on our [GitHub repository](https://github.com/bloominstituteoftechnology/bloom-env-setup-vscode).
 
 ## License
-This extension is provided under the [MIT License](./LICENSE).
+This extension is provided under the [MIT License](https://github.com/bloominstituteoftechnology/bloom-env-setup-vscode/blob/main/LICENSE).

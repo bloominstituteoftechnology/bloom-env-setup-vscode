@@ -31,5 +31,9 @@
   "dependencies": {
     "md5": "^2.3.0",
     "validator": "^13.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloominstituteoftechnology/bloom-env-setup-vscode.git"
   }
 }
