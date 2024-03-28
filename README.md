@@ -1,6 +1,6 @@
-# bloom-env README
+# bloom-env-setup README
 
-This is the README for your extension "bloom-env". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "bloom-env-setup". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

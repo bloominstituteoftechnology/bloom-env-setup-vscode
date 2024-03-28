@@ -1,6 +1,6 @@
 {
-  "name": "bloom-env",
-  "displayName": "bloom-env",
+  "name": "bloom-env-setup",
+  "displayName": "Bloom Env Setup",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "bloom-env.getHash",
-        "title": "Get Magic Code"
+        "command": "bloom-env-setup.getHash",
+        "title": "Bloomtech Setup Confirmation Code"
       }
     ]
   },

@@ -6,7 +6,7 @@ const md5 = require('md5')
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-  let disposable = vscode.commands.registerCommand('bloom-env.getHash', async function () {
+  let disposable = vscode.commands.registerCommand('bloom-env-setup.getHash', async function () {
     const rawEmail = await vscode.window.showInputBox({
       prompt: "Enter your email, please."
     })
@@ -20,7 +20,15 @@ function activate(context) {
     const isEmailValid = validator.isEmail(email)
 
     if (email && isEmailValid) {
-      vscode.window.showInformationMessage(`Your magic code: ${md5(email).slice(0, 10)}`)
+      const hash = md5(email).slice(0, 8)
+      vscode.window.showInformationMessage(`Your code: ${hash}`, 'Copy code to clipboard')
+        .then(selection => {
+          if (selection === 'Copy code to clipboard') {
+            vscode.env.clipboard.writeText(hash).then(() => {
+              vscode.window.showInformationMessage(`Code ${hash} copied to clipboard!`)
+            })
+          }
+        })
     } else {
       vscode.window.showInformationMessage('No valid email was entered.')
     }
@@ -29,7 +37,7 @@ function activate(context) {
   context.subscriptions.push(disposable)
 }
 
-function deactivate() { }
+function deactivate() {}
 
 module.exports = {
   activate,
