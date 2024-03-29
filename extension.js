@@ -19,7 +19,7 @@ function activate(context) {
     const email = rawEmail.trim().toLowerCase()
     const isEmailValid = validator.isEmail(email)
 
-    if (email && isEmailValid) {
+    if (isEmailValid) {
       const hash = md5(email).slice(0, 8)
       vscode.window.showInformationMessage(`Your code: ${hash}`, 'Copy code to clipboard')
         .then(selection => {

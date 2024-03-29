@@ -3,8 +3,9 @@
   "displayName": "Bloomtech Env Setup",
   "publisher": "BloomtechInstituteofTechnology",
   "description": "This extension allows Bloomtech students to obtain an environment setup confirmation code",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Gabriel Cabrejas <gabriel@cabrejas.net>",
+  "license": "MIT",
   "engines": {
     "vscode": ">=1.0.0"
   },

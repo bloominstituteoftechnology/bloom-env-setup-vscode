@@ -7,6 +7,7 @@ This quickstart guide is for developers looking to understand or contribute to t
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
+
 - [Node.js](https://nodejs.org/) (LTS version recommended)
 - [Visual Studio Code](https://code.visualstudio.com/) (latest stable version)
 
@@ -26,6 +27,7 @@ Before you begin, ensure you have the following installed:
 ## Testing the Extension
 
 Ensure the following functionalities work as expected:
+
 - Email input prompt opens.
 - Email validation checks for correctly formatted email addresses.
 - Hash code generation is correct and consistent for the same email.
@@ -51,7 +53,7 @@ When you're ready to publish changes, update the version number in `package.json
 
 ## Support
 
-If you encounter any issues or require assistance, please contact the support team at [support@bloomtech.com](mailto:academicsupport@bloomtech.com).
+If you encounter any issues or require assistance, please contact the support team at [academicsupport@bloomtech.com](mailto:academicsupport@bloomtech.com).
 
 ## License
 
